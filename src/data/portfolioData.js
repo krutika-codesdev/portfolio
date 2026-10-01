@@ -44,6 +44,11 @@ export const personalInfo = {
 export const developerSnapshot = {
   focus: "Software Development / Web Development",
   currentDirection: "Full-Stack Development",
+  careerGoal: {
+    eyebrow: "CAREER & LEARNING GOAL",
+    title: "Full-Stack Development & Software Engineering",
+    statement: "Targeting Software Engineering Internships during the 2026–2027 academic year by building solid fundamentals across full-stack web development, practical systems programming, and algorithmic problem solving."
+  },
   strengths: [
     { title: "Problem Solving", desc: "Algorithmic thinking and breaking multi-step logic into robust modules." },
     { title: "Analytical Thinking", desc: "Evaluating trade-offs, validating data schemas, and edge-case handling." },
@@ -175,7 +180,7 @@ export const veritasIQData = {
     }
   ],
   outcome: "Transforms messy, unvetted catalog files into cleanly structured, auditable, and queryable product data with transparent validation flags and reproducible scoring.",
-  github: null,
+  github: "https://github.com/krutika-codesdev/veritas-iq",
   demo: null
 };
 
@@ -208,6 +213,36 @@ export const otherProjects = [
       "Procedural problem solving and core programming fundamentals"
     ],
     github: "https://github.com/krutika-codesdev/c-programming",
+    demo: null
+  },
+  {
+    id: "leetcode-solutions",
+    title: "LeetCode Solutions & Algorithmic Practice",
+    category: "Algorithms & Data Structures",
+    summary: "Curated problem solutions across fundamental data structures (arrays, strings, stacks, linked lists) for Activity 4.",
+    description: "Documentation of algorithmic problem-solving for Portfolio Building Activity 4, covering 8 problems across Arrays & Strings, Basic Algorithms, Stacks, and Linked Lists with complexity notes and verified test submissions.",
+    technologies: ["Data Structures", "Algorithms", "Problem Solving", "Time Complexity"],
+    highlights: [
+      "8 verified solutions with time and space complexity analysis",
+      "Progress tracking across 4 core foundational modules",
+      "Consistent commit history and documented solution notes"
+    ],
+    github: "https://github.com/krutika-codesdev/leetcode-solutions",
+    demo: null
+  },
+  {
+    id: "hello-world",
+    title: "Development Environment & Collaboration",
+    category: "Tooling & Collaboration",
+    summary: "Foundational development setup, Git version control workflow, and pair programming collaboration for Activities 1–3.",
+    description: "Coursework repository for Portfolio Building Activities 1–3 documenting VS Code MinGW-w64 toolchain configuration, Git repository management, and live collaborative pair programming using VS Code Live Share and GitLens.",
+    technologies: ["VS Code", "MinGW-w64", "Git", "GitHub", "Live Share", "GitLens"],
+    highlights: [
+      "Activity 1: Local C/C++ compiler and VS Code toolchain configuration",
+      "Activity 2: Git version control initialization and remote repository tracking",
+      "Activity 3: Pair programming session with peer via Live Share and GitLens"
+    ],
+    github: "https://github.com/krutika-codesdev/Hello-World",
     demo: null
   }
 ];
@@ -260,7 +295,8 @@ export const activitiesData = [
     category: "Hackathon / Technical Challenge",
     focus: "Product Intelligence & Validation",
     description: "The hackathon challenge context in which VeritasIQ was developed, addressing heterogeneous catalog ingestion, data validation, and automated entity intelligence.",
-    skills: ["Product Intelligence", "Data Validation", "Rapid Prototyping"]
+    skills: ["Product Intelligence", "Data Validation", "Rapid Prototyping"],
+    link: "https://github.com/krutika-codesdev/veritas-iq"
   },
   {
     organization: "AWS Launchpad",
@@ -284,3 +320,63 @@ export const activitiesData = [
     skills: ["Engineering Fundamentals", "Academic Collaboration"]
   }
 ];
+
+export const courseActivitiesData = [
+  {
+    code: "ACT 01",
+    title: "Activity 1 — Dev Environment Setup",
+    role: "VS Code, MinGW-w64 GCC/G++ toolchain configuration, compiler verification, and C build workflow.",
+    category: "coursework",
+    link: "https://github.com/krutika-codesdev/Hello-World"
+  },
+  {
+    code: "ACT 02",
+    title: "Activity 2 — Git & GitHub Setup",
+    role: "Git version control initialization, repository setup, commit tracking, and remote synchronization.",
+    category: "coursework",
+    link: "https://github.com/krutika-codesdev/Hello-World"
+  },
+  {
+    code: "ACT 03",
+    title: "Activity 3 — Collaboration & Live Share",
+    role: "Pair programming session with peer via VS Code Live Share, co-authoring greet(), and GitLens tracking.",
+    category: "coursework",
+    link: "https://github.com/krutika-codesdev/Hello-World"
+  },
+  {
+    code: "ACT 04",
+    title: "Activity 4 — LeetCode Practice",
+    role: "Algorithmic problem-solving across Arrays, Strings, Stacks, and Linked Lists with documented progress.",
+    category: "coursework",
+    link: "https://github.com/krutika-codesdev/leetcode-solutions"
+  }
+];
+
+export const externalActivitiesData = [
+  {
+    code: "IPL",
+    title: "INTENSE PROGRAMMING LEAGUE",
+    role: "Algorithmic challenges & competitive problem solving",
+    category: "programs"
+  },
+  {
+    code: "UNIHACK",
+    title: "UNIHACK / UNILOG",
+    role: "Technical challenge context in which VeritasIQ was developed",
+    category: "programs",
+    link: "https://github.com/krutika-codesdev/veritas-iq"
+  },
+  {
+    code: "AWS",
+    title: "AWS LAUNCHPAD",
+    role: "Cloud workloads & foundational AI technical workshop sessions",
+    category: "programs"
+  },
+  {
+    code: "COMMUNITY",
+    title: "GDG & IEEE STUDENT BRANCH",
+    role: "Technical developer meetups, workshops, and engineering collaboration",
+    category: "programs"
+  }
+];
+

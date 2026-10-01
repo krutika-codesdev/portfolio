@@ -1,5 +1,5 @@
 import React from "react";
-import { personalInfo } from "../data/portfolioData";
+import { personalInfo, developerSnapshot } from "../data/portfolioData";
 
 export default function IdentityBentoGrid() {
   const disciplines = [
@@ -67,6 +67,14 @@ export default function IdentityBentoGrid() {
                 <span className="pod-dot">&middot;</span>
                 <span className="pod-loc">Bengaluru, India</span>
               </div>
+            </div>
+
+            {/* Career & Learning Goal */}
+            <div className="editorial-focus-note">
+              <span className="pod-eyebrow">{developerSnapshot.careerGoal.eyebrow}</span>
+              <p className="methodology-text">
+                {developerSnapshot.careerGoal.statement}
+              </p>
             </div>
 
             {/* Practical Approach Statement */}

@@ -1,6 +1,7 @@
 import React from "react";
 import { veritasIQData } from "../data/portfolioData";
-import { ArrowRight, Sparkles, FileSpreadsheet, Layers, ShieldCheck, Cpu, Database, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Sparkles, FileSpreadsheet, Layers, ShieldCheck, Cpu, Database, CheckCircle2 } from "lucide-react";
+import { GithubIcon } from "./Icons";
 
 export default function VeritasIQShowcase({ onOpenArchitecture }) {
   const architecturalFlow = [
@@ -35,7 +36,7 @@ export default function VeritasIQShowcase({ onOpenArchitecture }) {
             </p>
 
             <p className="case-study-detail-text">
-              VeritasIQ eliminates manual catalog normalization by systematically parsing unstructured PDFs, loose CSVs, and Excel spreadsheets. Ingested records are mapped into Pydantic models, enriched with contextual product classifications via the Gemini API, and evaluated with deterministic health scores stored in SQLite for transparent explainability.
+              VeritasIQ reduces manual catalog normalization by systematically parsing unstructured PDFs, loose CSVs, and Excel spreadsheets. Ingested records are mapped into Pydantic models, enriched with contextual product classifications via the Gemini API, and evaluated with deterministic health scores stored in SQLite for transparent explainability.
             </p>
 
             {/* Architectural Highlights */}
@@ -64,7 +65,7 @@ export default function VeritasIQShowcase({ onOpenArchitecture }) {
               </div>
             </div>
 
-            {/* Primary Action Button */}
+            {/* Primary Action Buttons */}
             <div className="case-study-action-row">
               <button
                 type="button"
@@ -76,6 +77,19 @@ export default function VeritasIQShowcase({ onOpenArchitecture }) {
                 <span>EXPLORE 11-STAGE ARCHITECTURE</span>
                 <ArrowRight size={14} className="arrow-hover-shift" />
               </button>
+              {veritasIQData.github && (
+                <a
+                  href={veritasIQData.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-case-study-repo"
+                  aria-label="Open VeritasIQ repository on GitHub"
+                >
+                  <GithubIcon size={14} />
+                  <span>GITHUB REPOSITORY</span>
+                  <ArrowUpRight size={14} className="arrow-hover-shift" />
+                </a>
+              )}
             </div>
           </div>
 
